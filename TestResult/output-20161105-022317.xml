@@ -1,0 +1,1808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161105 02:23:33.211" generator="Robot 3.0 (Python 2.7.11 on win32)">
+<suite source="D:\Testcase Sticky" id="s1" name="Testcase Sticky">
+<suite source="D:\Testcase Sticky\01 Sign In" id="s1-s1" name="01 Sign In">
+<suite source="D:\Testcase Sticky\01 Sign In\Sign In.robot" id="s1-s1-s1" name="Sign In">
+<test id="s1-s1-s1-t1" name="SignInไม่สำเร็จ(ไม่ได้กรอกUsername)">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20161105 02:23:34.352" level="INFO">Opening browser 'chrome' to base url 'https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/'</msg>
+<status status="PASS" endtime="20161105 02:23:41.627" starttime="20161105 02:23:34.352"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:41.627" starttime="20161105 02:23:34.352"></status>
+</kw>
+<kw name="ไม่กรอกUsername">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20161105 02:23:41.630" level="INFO">Typing text '' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:23:41.708" starttime="20161105 02:23:41.629"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:41.709" starttime="20161105 02:23:41.628"></status>
+</kw>
+<kw name="กรอกPasswordถูก">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20161105 02:23:41.710" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:23:41.788" starttime="20161105 02:23:41.710"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:41.789" starttime="20161105 02:23:41.709"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:41.791" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:41.873" starttime="20161105 02:23:41.790"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:41.874" starttime="20161105 02:23:41.789"></status>
+</kw>
+<kw name="รอแสดงผลว่าPlease fill your username.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Please fill your username.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:42.101" starttime="20161105 02:23:41.875"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.102" starttime="20161105 02:23:41.874"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.102" critical="yes" starttime="20161105 02:23:34.352"></status>
+</test>
+<test id="s1-s1-s1-t2" name="SignInไม่สำเร็จ(ไม่ได้กรอกPassword)">
+<kw name="กรอกUsernameถูก">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>guest</arg>
+</arguments>
+<msg timestamp="20161105 02:23:42.106" level="INFO">Typing text 'guest' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:23:42.153" starttime="20161105 02:23:42.106"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.153" starttime="20161105 02:23:42.105"></status>
+</kw>
+<kw name="ไม่กรอกPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20161105 02:23:42.155" level="INFO">Typing text '' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:23:42.188" starttime="20161105 02:23:42.154"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.189" starttime="20161105 02:23:42.153"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:42.191" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:42.246" starttime="20161105 02:23:42.190"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.246" starttime="20161105 02:23:42.189"></status>
+</kw>
+<kw name="รอแสดงผลว่าPlease fill your password.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Please fill your password.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:42.475" starttime="20161105 02:23:42.247"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.475" starttime="20161105 02:23:42.247"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.475" critical="yes" starttime="20161105 02:23:42.103"></status>
+</test>
+<test id="s1-s1-s1-t3" name="SignInไม่สำเร็จ(ไม่ได้กรอกUsernameและPassword)">
+<kw name="ไม่กรอกUsername">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20161105 02:23:42.480" level="INFO">Typing text '' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:23:42.516" starttime="20161105 02:23:42.480"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.517" starttime="20161105 02:23:42.479"></status>
+</kw>
+<kw name="ไม่กรอกPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20161105 02:23:42.519" level="INFO">Typing text '' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:23:42.558" starttime="20161105 02:23:42.518"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.558" starttime="20161105 02:23:42.517"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:42.560" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:42.609" starttime="20161105 02:23:42.559"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.609" starttime="20161105 02:23:42.559"></status>
+</kw>
+<kw name="รอแสดงผลว่าPlease fill your username.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Please fill your username.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:42.828" starttime="20161105 02:23:42.611"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.828" starttime="20161105 02:23:42.610"></status>
+</kw>
+<kw name="รอแสดงผลว่าPlease fill your password.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Please fill your password.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:42.838" starttime="20161105 02:23:42.829"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.839" starttime="20161105 02:23:42.829"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.839" critical="yes" starttime="20161105 02:23:42.477"></status>
+</test>
+<test id="s1-s1-s1-t4" name="SignInไม่สำเร็จ(Usernameผิด)">
+<kw name="กรอกUsernameผิด">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>gggg</arg>
+</arguments>
+<msg timestamp="20161105 02:23:42.843" level="INFO">Typing text 'gggg' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:23:42.884" starttime="20161105 02:23:42.843"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.884" starttime="20161105 02:23:42.842"></status>
+</kw>
+<kw name="กรอกPasswordถูก">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20161105 02:23:42.886" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:23:42.931" starttime="20161105 02:23:42.885"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.932" starttime="20161105 02:23:42.885"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:42.933" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:42.985" starttime="20161105 02:23:42.933"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:42.985" starttime="20161105 02:23:42.932"></status>
+</kw>
+<kw name="รอแสดงผลว่าPlease check your username and password.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Please check your username and password.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:43.218" starttime="20161105 02:23:42.986"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.219" starttime="20161105 02:23:42.986"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.219" critical="yes" starttime="20161105 02:23:42.840"></status>
+</test>
+<test id="s1-s1-s1-t5" name="SignInไม่สำเร็จ(Passwordผิด)">
+<kw name="กรอกUsernameถูก">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>guest</arg>
+</arguments>
+<msg timestamp="20161105 02:23:43.222" level="INFO">Typing text 'guest' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:23:43.268" starttime="20161105 02:23:43.222"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.268" starttime="20161105 02:23:43.222"></status>
+</kw>
+<kw name="กรอกPasswordผิด">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>000</arg>
+</arguments>
+<msg timestamp="20161105 02:23:43.270" level="INFO">Typing text '000' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:23:43.314" starttime="20161105 02:23:43.270"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.315" starttime="20161105 02:23:43.269"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:43.316" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:43.366" starttime="20161105 02:23:43.316"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.366" starttime="20161105 02:23:43.315"></status>
+</kw>
+<kw name="รอแสดงผลว่าPlease check your username and password.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Please check your username and password.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:43.375" starttime="20161105 02:23:43.367"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.376" starttime="20161105 02:23:43.367"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.376" critical="yes" starttime="20161105 02:23:43.220"></status>
+</test>
+<test id="s1-s1-s1-t6" name="SignInไม่สำเร็จ(UsernameผิดและPasswordผิด)">
+<kw name="กรอกUsernameผิด">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>gggg</arg>
+</arguments>
+<msg timestamp="20161105 02:23:43.382" level="INFO">Typing text 'gggg' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:23:43.424" starttime="20161105 02:23:43.381"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.424" starttime="20161105 02:23:43.380"></status>
+</kw>
+<kw name="กรอกPasswordผิด">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>000</arg>
+</arguments>
+<msg timestamp="20161105 02:23:43.426" level="INFO">Typing text '000' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:23:43.464" starttime="20161105 02:23:43.425"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.465" starttime="20161105 02:23:43.424"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:43.466" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:43.514" starttime="20161105 02:23:43.466"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.514" starttime="20161105 02:23:43.465"></status>
+</kw>
+<kw name="รอแสดงผลว่าPlease check your username and password.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Please check your username and password.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:43.524" starttime="20161105 02:23:43.515"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.524" starttime="20161105 02:23:43.514"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.525" critical="yes" starttime="20161105 02:23:43.378"></status>
+</test>
+<test id="s1-s1-s1-t7" name="SignInสำเร็จ">
+<kw name="กรอกUsernameถูก">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>guest</arg>
+</arguments>
+<msg timestamp="20161105 02:23:43.528" level="INFO">Typing text 'guest' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:23:43.570" starttime="20161105 02:23:43.528"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.571" starttime="20161105 02:23:43.527"></status>
+</kw>
+<kw name="กรอกPasswordถูก">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20161105 02:23:43.573" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:23:43.610" starttime="20161105 02:23:43.572"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.611" starttime="20161105 02:23:43.571"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:43.613" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:43.662" starttime="20161105 02:23:43.612"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:43.663" starttime="20161105 02:23:43.611"></status>
+</kw>
+<kw name="รอแสดงผลว่าSign in successfully.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Sign in successfully.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:44.517" starttime="20161105 02:23:43.664"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:44.518" starttime="20161105 02:23:43.663"></status>
+</kw>
+<kw name="รอแสดงผลว่าMy Lists">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>My Lists</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:44.551" starttime="20161105 02:23:44.520"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:44.551" starttime="20161105 02:23:44.519"></status>
+</kw>
+<kw name="ปิดเว็บ">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161105 02:23:47.653" starttime="20161105 02:23:44.552"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:47.653" starttime="20161105 02:23:44.551"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:47.653" critical="yes" starttime="20161105 02:23:43.526"></status>
+</test>
+<status status="PASS" endtime="20161105 02:23:47.653" starttime="20161105 02:23:34.258"></status>
+</suite>
+<status status="PASS" endtime="20161105 02:23:47.653" starttime="20161105 02:23:34.243"></status>
+</suite>
+<suite source="D:\Testcase Sticky\02_Sign_Up" id="s1-s2" name="02 Sign Up">
+<suite source="D:\Testcase Sticky\02_Sign_Up\Sign_Up.robot" id="s1-s2-s1" name="Sign Up">
+<test id="s1-s2-s1-t1" name="Signupไม่สำเร็จ(ไม่ได้กรอกUsername)">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20161105 02:23:47.669" level="INFO">Opening browser 'chrome' to base url 'https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/'</msg>
+<status status="PASS" endtime="20161105 02:23:57.060" starttime="20161105 02:23:47.669"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.061" starttime="20161105 02:23:47.669"></status>
+</kw>
+<kw name="กดปุ่มCreate">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>id=signup-link</arg>
+</arguments>
+<msg timestamp="20161105 02:23:57.063" level="INFO">Clicking link 'id=signup-link'.</msg>
+<status status="PASS" endtime="20161105 02:23:57.131" starttime="20161105 02:23:57.062"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.132" starttime="20161105 02:23:57.061"></status>
+</kw>
+<kw name="ไม่กรอกUsername">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username_signup</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20161105 02:23:57.134" level="INFO">Typing text '' into text field 'id=username_signup'</msg>
+<status status="PASS" endtime="20161105 02:23:57.213" starttime="20161105 02:23:57.133"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.213" starttime="20161105 02:23:57.132"></status>
+</kw>
+<kw name="กดปุ่มSignUp">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-up-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:57.215" level="INFO">Clicking button 'id=sign-up-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:57.290" starttime="20161105 02:23:57.214"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.291" starttime="20161105 02:23:57.214"></status>
+</kw>
+<kw name="รอแสดงผลว่าfill your username.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>fill your username.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:57.311" starttime="20161105 02:23:57.292"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.312" starttime="20161105 02:23:57.291"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.312" critical="yes" starttime="20161105 02:23:47.669"></status>
+</test>
+<test id="s1-s2-s1-t2" name="Signupไม่สำเร็จ(ไม่ได้กรอกPassword)">
+<kw name="ไม่กรอกPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password_signup</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20161105 02:23:57.316" level="INFO">Typing text '' into text field 'id=password_signup'</msg>
+<status status="PASS" endtime="20161105 02:23:57.396" starttime="20161105 02:23:57.316"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.397" starttime="20161105 02:23:57.315"></status>
+</kw>
+<kw name="กดปุ่มSignUp">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-up-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:57.398" level="INFO">Clicking button 'id=sign-up-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:57.445" starttime="20161105 02:23:57.398"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.445" starttime="20161105 02:23:57.397"></status>
+</kw>
+<kw name="รอแสดงผลว่าfill your password.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>fill your password.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:57.464" starttime="20161105 02:23:57.446"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.464" starttime="20161105 02:23:57.446"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.465" critical="yes" starttime="20161105 02:23:57.314"></status>
+</test>
+<test id="s1-s2-s1-t3" name="Signupไม่สำเร็จ(ไม่ได้กรอกRepeatPassword)">
+<kw name="ไม่กรอกRepeatPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=repeat_password_signup</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20161105 02:23:57.469" level="INFO">Typing text '' into text field 'id=repeat_password_signup'</msg>
+<status status="PASS" endtime="20161105 02:23:57.543" starttime="20161105 02:23:57.468"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.543" starttime="20161105 02:23:57.468"></status>
+</kw>
+<kw name="กดปุ่มSignUp">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-up-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:57.545" level="INFO">Clicking button 'id=sign-up-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:57.588" starttime="20161105 02:23:57.544"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.588" starttime="20161105 02:23:57.544"></status>
+</kw>
+<kw name="รอแสดงผลว่าrepeat your password.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>repeat your password.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:57.608" starttime="20161105 02:23:57.590"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.609" starttime="20161105 02:23:57.589"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.609" critical="yes" starttime="20161105 02:23:57.466"></status>
+</test>
+<test id="s1-s2-s1-t4" name="Signupไม่สำเร็จ(กรอกUsernameซ้ำ)">
+<kw name="กรอกUsernameซ้ำ">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username_signup</arg>
+<arg>admin</arg>
+</arguments>
+<msg timestamp="20161105 02:23:57.613" level="INFO">Typing text 'admin' into text field 'id=username_signup'</msg>
+<status status="PASS" endtime="20161105 02:23:57.659" starttime="20161105 02:23:57.613"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.660" starttime="20161105 02:23:57.612"></status>
+</kw>
+<kw name="กดปุ่มSignUp">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-up-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:57.662" level="INFO">Clicking button 'id=sign-up-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:57.708" starttime="20161105 02:23:57.661"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.708" starttime="20161105 02:23:57.661"></status>
+</kw>
+<kw name="รอแสดงผลว่าthis username is already in used.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>this username is already in used.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:57.731" starttime="20161105 02:23:57.710"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.731" starttime="20161105 02:23:57.709"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.732" critical="yes" starttime="20161105 02:23:57.610"></status>
+</test>
+<test id="s1-s2-s1-t5" name="Signupไม่สำเร็จ(กรอกUsernameถูกและช่องอื่นไม่ใส่อะไรเลย)">
+<kw name="กรอกUsernameถูก">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username_signup</arg>
+<arg>totaba1</arg>
+</arguments>
+<msg timestamp="20161105 02:23:57.736" level="INFO">Typing text 'totaba1' into text field 'id=username_signup'</msg>
+<status status="PASS" endtime="20161105 02:23:57.782" starttime="20161105 02:23:57.736"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.783" starttime="20161105 02:23:57.735"></status>
+</kw>
+<kw name="กดปุ่มSignUp">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-up-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:57.785" level="INFO">Clicking button 'id=sign-up-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:57.829" starttime="20161105 02:23:57.784"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:57.830" starttime="20161105 02:23:57.783"></status>
+</kw>
+<kw name="รอแสดงผลว่าyou can use this username.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>you can use this username.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:58.060" starttime="20161105 02:23:57.831"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:58.060" starttime="20161105 02:23:57.830"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:58.060" critical="yes" starttime="20161105 02:23:57.732"></status>
+</test>
+<test id="s1-s2-s1-t6" name="Signupไม่สำเร็จ(RepeatPasswordไม่ตรงกับPassword)">
+<kw name="กรอกPasswordถูก">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password_signup</arg>
+<arg>1234</arg>
+</arguments>
+<msg timestamp="20161105 02:23:58.063" level="INFO">Typing text '1234' into text field 'id=password_signup'</msg>
+<status status="PASS" endtime="20161105 02:23:58.109" starttime="20161105 02:23:58.063"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:58.110" starttime="20161105 02:23:58.063"></status>
+</kw>
+<kw name="กรอกRepeatPasswordผิด">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=repeat_password_signup</arg>
+<arg>12345</arg>
+</arguments>
+<msg timestamp="20161105 02:23:58.111" level="INFO">Typing text '12345' into text field 'id=repeat_password_signup'</msg>
+<status status="PASS" endtime="20161105 02:23:58.153" starttime="20161105 02:23:58.111"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:58.153" starttime="20161105 02:23:58.110"></status>
+</kw>
+<kw name="กดปุ่มSignUp">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-up-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:58.155" level="INFO">Clicking button 'id=sign-up-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:58.199" starttime="20161105 02:23:58.155"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:58.199" starttime="20161105 02:23:58.154"></status>
+</kw>
+<kw name="รอแสดงผลว่าYour password is not match.">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>your password is not match.</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:58.223" starttime="20161105 02:23:58.201"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:58.224" starttime="20161105 02:23:58.200"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:58.224" critical="yes" starttime="20161105 02:23:58.061"></status>
+</test>
+<test id="s1-s2-s1-t7" name="Signupสำเร็จ">
+<kw name="กรอกUsernameถูก">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username_signup</arg>
+<arg>totaba1</arg>
+</arguments>
+<msg timestamp="20161105 02:23:58.229" level="INFO">Typing text 'totaba1' into text field 'id=username_signup'</msg>
+<status status="PASS" endtime="20161105 02:23:58.274" starttime="20161105 02:23:58.228"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:58.275" starttime="20161105 02:23:58.227"></status>
+</kw>
+<kw name="กรอกPasswordถูก">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password_signup</arg>
+<arg>1234</arg>
+</arguments>
+<msg timestamp="20161105 02:23:58.276" level="INFO">Typing text '1234' into text field 'id=password_signup'</msg>
+<status status="PASS" endtime="20161105 02:23:58.317" starttime="20161105 02:23:58.276"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:58.318" starttime="20161105 02:23:58.275"></status>
+</kw>
+<kw name="กรอกRepeatPasswordถูก">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=repeat_password_signup</arg>
+<arg>1234</arg>
+</arguments>
+<msg timestamp="20161105 02:23:58.320" level="INFO">Typing text '1234' into text field 'id=repeat_password_signup'</msg>
+<status status="PASS" endtime="20161105 02:23:58.362" starttime="20161105 02:23:58.319"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:58.363" starttime="20161105 02:23:58.318"></status>
+</kw>
+<kw name="กดปุ่มSignUp">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-up-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:23:58.364" level="INFO">Clicking button 'id=sign-up-btn'.</msg>
+<status status="PASS" endtime="20161105 02:23:58.410" starttime="20161105 02:23:58.364"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:58.411" starttime="20161105 02:23:58.363"></status>
+</kw>
+<kw name="รอแสดงผลว่าSign up successfully please wait">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Sign up Successfully please wait...</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:58.430" starttime="20161105 02:23:58.412"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:58.430" starttime="20161105 02:23:58.411"></status>
+</kw>
+<kw name="รอแสดงผลว่าMy Lists">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>My Lists</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:23:59.993" starttime="20161105 02:23:58.431"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:23:59.993" starttime="20161105 02:23:58.431"></status>
+</kw>
+<kw name="ปิดเว็บ">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161105 02:24:03.571" starttime="20161105 02:23:59.994"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:03.571" starttime="20161105 02:23:59.994"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:03.571" critical="yes" starttime="20161105 02:23:58.225"></status>
+</test>
+<status status="PASS" endtime="20161105 02:24:03.571" starttime="20161105 02:23:47.653"></status>
+</suite>
+<status status="PASS" endtime="20161105 02:24:03.571" starttime="20161105 02:23:47.653"></status>
+</suite>
+<suite source="D:\Testcase Sticky\03_Sign_out" id="s1-s3" name="03 Sign out">
+<suite source="D:\Testcase Sticky\03_Sign_out\Sign_out.robot" id="s1-s3-s1" name="Sign out">
+<test id="s1-s3-s1-t1" name="SignOut">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20161105 02:24:03.586" level="INFO">Opening browser 'chrome' to base url 'https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/'</msg>
+<status status="PASS" endtime="20161105 02:24:13.643" starttime="20161105 02:24:03.586"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:13.643" starttime="20161105 02:24:03.586"></status>
+</kw>
+<kw name="กรอกUsername">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>guest</arg>
+</arguments>
+<msg timestamp="20161105 02:24:13.645" level="INFO">Typing text 'guest' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:24:13.748" starttime="20161105 02:24:13.645"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:13.749" starttime="20161105 02:24:13.644"></status>
+</kw>
+<kw name="กรอกPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20161105 02:24:13.750" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:24:13.842" starttime="20161105 02:24:13.750"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:13.843" starttime="20161105 02:24:13.749"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:24:13.845" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:24:13.930" starttime="20161105 02:24:13.844"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:13.930" starttime="20161105 02:24:13.843"></status>
+</kw>
+<kw name="รอแสดงผลว่าMy Lists">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>My Lists</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:24:15.722" starttime="20161105 02:24:13.931"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:15.723" starttime="20161105 02:24:13.931"></status>
+</kw>
+<kw name="กดชื่อตัวเอง">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>xpath=//*[@id="stickyBar"]/ul/li/a</arg>
+</arguments>
+<msg timestamp="20161105 02:24:15.725" level="INFO">Clicking link 'xpath=//*[@id="stickyBar"]/ul/li/a'.</msg>
+<status status="PASS" endtime="20161105 02:24:15.794" starttime="20161105 02:24:15.724"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:15.794" starttime="20161105 02:24:15.723"></status>
+</kw>
+<kw name="กด Sign out">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>id=sign-out</arg>
+</arguments>
+<msg timestamp="20161105 02:24:15.796" level="INFO">Clicking link 'id=sign-out'.</msg>
+<status status="PASS" endtime="20161105 02:24:16.205" starttime="20161105 02:24:15.795"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:16.206" starttime="20161105 02:24:15.795"></status>
+</kw>
+<kw name="รอแสดงผลว่าSign in">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Sign in</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:24:16.233" starttime="20161105 02:24:16.207"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:16.234" starttime="20161105 02:24:16.206"></status>
+</kw>
+<kw name="ปิดเว็บ">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161105 02:24:19.338" starttime="20161105 02:24:16.235"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:19.338" starttime="20161105 02:24:16.234"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:19.338" critical="yes" starttime="20161105 02:24:03.586"></status>
+</test>
+<status status="PASS" endtime="20161105 02:24:19.338" starttime="20161105 02:24:03.571"></status>
+</suite>
+<status status="PASS" endtime="20161105 02:24:19.338" starttime="20161105 02:24:03.571"></status>
+</suite>
+<suite source="D:\Testcase Sticky\04_Write_todo" id="s1-s4" name="04 Write todo">
+<suite source="D:\Testcase Sticky\04_Write_todo\Write_todo.robot" id="s1-s4-s1" name="Write todo">
+<test id="s1-s4-s1-t1" name="เขียนWrite todo ไม่สำเร็จ(ไม่ได้กรอก)">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20161105 02:24:19.338" level="INFO">Opening browser 'chrome' to base url 'https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/'</msg>
+<status status="PASS" endtime="20161105 02:24:27.653" starttime="20161105 02:24:19.338"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:27.654" starttime="20161105 02:24:19.338"></status>
+</kw>
+<kw name="กรอกUsername">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>guest</arg>
+</arguments>
+<msg timestamp="20161105 02:24:27.656" level="INFO">Typing text 'guest' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:24:27.754" starttime="20161105 02:24:27.656"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:27.754" starttime="20161105 02:24:27.655"></status>
+</kw>
+<kw name="กรอกPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20161105 02:24:27.756" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:24:27.845" starttime="20161105 02:24:27.756"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:27.845" starttime="20161105 02:24:27.755"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:24:27.847" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:24:27.937" starttime="20161105 02:24:27.847"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:27.938" starttime="20161105 02:24:27.846"></status>
+</kw>
+<kw name="รอแสดงผลว่าMy Lists">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>My Lists</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:24:28.990" starttime="20161105 02:24:27.939"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:28.990" starttime="20161105 02:24:27.939"></status>
+</kw>
+<kw name="ไม่เติมข้อความลง write todo">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=topic_todo</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20161105 02:24:28.994" level="INFO">Typing text '' into text field 'id=topic_todo'</msg>
+<status status="PASS" endtime="20161105 02:24:29.075" starttime="20161105 02:24:28.993"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:29.075" starttime="20161105 02:24:28.991"></status>
+</kw>
+<kw name="กดEnter">
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>id=topic_todo</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:24:29.106" starttime="20161105 02:24:29.077"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:29.107" starttime="20161105 02:24:29.076"></status>
+</kw>
+<kw name="ไม่แสดงผล">
+<kw name="Page Should Not Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is not found on the current page.</doc>
+<arguments>
+<arg>//*[@id="a_todo_list_161"]</arg>
+</arguments>
+<msg timestamp="20161105 02:24:29.127" level="INFO">Current page does not contain element '//*[@id="a_todo_list_161"]'.</msg>
+<status status="PASS" endtime="20161105 02:24:29.127" starttime="20161105 02:24:29.108"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:29.128" starttime="20161105 02:24:29.107"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:29.128" critical="yes" starttime="20161105 02:24:19.338"></status>
+</test>
+<test id="s1-s4-s1-t2" name="เขียนWrite todo สำเร็จ">
+<kw name="เติมข้อความลง write todo">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=topic_todo</arg>
+<arg>ไปเที่ยว</arg>
+</arguments>
+<msg timestamp="20161105 02:24:29.131" level="INFO">Typing text 'ไปเที่ยว' into text field 'id=topic_todo'</msg>
+<status status="PASS" endtime="20161105 02:24:29.186" starttime="20161105 02:24:29.131"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:29.187" starttime="20161105 02:24:29.130"></status>
+</kw>
+<kw name="กดEnter">
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>id=topic_todo</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:24:29.220" starttime="20161105 02:24:29.188"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:29.220" starttime="20161105 02:24:29.187"></status>
+</kw>
+<kw name="รอแสดงผลว่าไปเที่ยว">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20161105 02:24:30.226" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20161105 02:24:30.226" starttime="20161105 02:24:29.221"></status>
+</kw>
+<kw name="Get Value" library="Selenium2Library">
+<doc>Returns the value attribute of element identified by `locator`.</doc>
+<arguments>
+<arg>id=a_todo_list_161</arg>
+</arguments>
+<assign>
+<var>${val}</var>
+</assign>
+<msg timestamp="20161105 02:24:30.242" level="INFO">${val} = ไปเที่ยว</msg>
+<status status="PASS" endtime="20161105 02:24:30.242" starttime="20161105 02:24:30.226"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>'${val}'=='ไปเที่ยว'</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:24:30.242" starttime="20161105 02:24:30.242"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:30.242" starttime="20161105 02:24:29.220"></status>
+</kw>
+<kw name="ปิดเว็บ">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161105 02:24:33.398" starttime="20161105 02:24:30.242"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:33.398" starttime="20161105 02:24:30.242"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:33.398" critical="yes" starttime="20161105 02:24:29.129"></status>
+</test>
+<status status="PASS" endtime="20161105 02:24:33.398" starttime="20161105 02:24:19.338"></status>
+</suite>
+<status status="PASS" endtime="20161105 02:24:33.398" starttime="20161105 02:24:19.338"></status>
+</suite>
+<suite source="D:\Testcase Sticky\05_Edit_todo" id="s1-s5" name="05 Edit todo">
+<suite source="D:\Testcase Sticky\05_Edit_todo\Edit_todo.robot" id="s1-s5-s1" name="Edit todo">
+<test id="s1-s5-s1-t1" name="edit todo สำเร็จ">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20161105 02:24:33.398" level="INFO">Opening browser 'chrome' to base url 'https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/'</msg>
+<status status="PASS" endtime="20161105 02:24:41.829" starttime="20161105 02:24:33.398"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:41.830" starttime="20161105 02:24:33.398"></status>
+</kw>
+<kw name="กรอกUsername">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>guest</arg>
+</arguments>
+<msg timestamp="20161105 02:24:41.832" level="INFO">Typing text 'guest' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:24:41.925" starttime="20161105 02:24:41.831"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:41.925" starttime="20161105 02:24:41.830"></status>
+</kw>
+<kw name="กรอกPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20161105 02:24:41.927" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:24:42.005" starttime="20161105 02:24:41.927"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:42.006" starttime="20161105 02:24:41.926"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:24:42.007" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:24:42.088" starttime="20161105 02:24:42.007"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:42.088" starttime="20161105 02:24:42.006"></status>
+</kw>
+<kw name="รอแสดงผลว่าMy Lists">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>My Lists</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:24:43.140" starttime="20161105 02:24:42.090"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:43.140" starttime="20161105 02:24:42.089"></status>
+</kw>
+<kw name="edit todo Buy orange juice">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=a_todo_list_91</arg>
+<arg>Buy Cola</arg>
+</arguments>
+<msg timestamp="20161105 02:24:43.142" level="INFO">Typing text 'Buy Cola' into text field 'id=a_todo_list_91'</msg>
+<status status="PASS" endtime="20161105 02:24:43.233" starttime="20161105 02:24:43.141"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:43.234" starttime="20161105 02:24:43.141"></status>
+</kw>
+<kw name="Refresh หน้า">
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>id=topic_todo</arg>
+<arg>\\116</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:24:43.293" starttime="20161105 02:24:43.235"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:43.293" starttime="20161105 02:24:43.234"></status>
+</kw>
+<kw name="ตรวจสอบหา Todo ที่แก้ไป">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20161105 02:24:44.301" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20161105 02:24:44.301" starttime="20161105 02:24:43.294"></status>
+</kw>
+<kw name="Get Value" library="Selenium2Library">
+<doc>Returns the value attribute of element identified by `locator`.</doc>
+<arguments>
+<arg>id=a_todo_list_91</arg>
+</arguments>
+<assign>
+<var>${val}</var>
+</assign>
+<msg timestamp="20161105 02:24:44.316" level="INFO">${val} = Buy Cola</msg>
+<status status="PASS" endtime="20161105 02:24:44.316" starttime="20161105 02:24:44.301"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>'${val}'=='Buy Cola'</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:24:44.324" starttime="20161105 02:24:44.316"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:44.324" starttime="20161105 02:24:43.293"></status>
+</kw>
+<kw name="ปิดเว็บ">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161105 02:24:47.879" starttime="20161105 02:24:44.325"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:47.879" starttime="20161105 02:24:44.325"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:47.879" critical="yes" starttime="20161105 02:24:33.398"></status>
+</test>
+<status status="PASS" endtime="20161105 02:24:47.879" starttime="20161105 02:24:33.398"></status>
+</suite>
+<status status="PASS" endtime="20161105 02:24:47.879" starttime="20161105 02:24:33.398"></status>
+</suite>
+<suite source="D:\Testcase Sticky\06 Search_todo" id="s1-s6" name="06 Search todo">
+<suite source="D:\Testcase Sticky\06 Search_todo\Search todo.robot" id="s1-s6-s1" name="Search todo">
+<test id="s1-s6-s1-t1" name="ค้นหา todo สำเร็จ">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20161105 02:24:47.879" level="INFO">Opening browser 'chrome' to base url 'https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/'</msg>
+<status status="PASS" endtime="20161105 02:24:57.545" starttime="20161105 02:24:47.879"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:57.546" starttime="20161105 02:24:47.879"></status>
+</kw>
+<kw name="กรอกUsername">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>Kaijo</arg>
+</arguments>
+<msg timestamp="20161105 02:24:57.549" level="INFO">Typing text 'Kaijo' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:24:57.641" starttime="20161105 02:24:57.548"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:57.641" starttime="20161105 02:24:57.547"></status>
+</kw>
+<kw name="กรอกPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20161105 02:24:57.643" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:24:57.721" starttime="20161105 02:24:57.642"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:57.722" starttime="20161105 02:24:57.642"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:24:57.723" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:24:57.810" starttime="20161105 02:24:57.723"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:57.810" starttime="20161105 02:24:57.722"></status>
+</kw>
+<kw name="รอแสดงผลว่าMy Lists">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>My Lists</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:24:59.103" starttime="20161105 02:24:57.811"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:59.103" starttime="20161105 02:24:57.810"></status>
+</kw>
+<kw name="พิมข้อความลงบน write a todo ว่า ไปตลาด">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=topic_todo</arg>
+<arg>ไปตลาด</arg>
+</arguments>
+<msg timestamp="20161105 02:24:59.105" level="INFO">Typing text 'ไปตลาด' into text field 'id=topic_todo'</msg>
+<status status="PASS" endtime="20161105 02:24:59.195" starttime="20161105 02:24:59.105"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:59.195" starttime="20161105 02:24:59.104"></status>
+</kw>
+<kw name="ตรวจสอบข้อความที่แสดงขึ้นมาว่า ไปตลาด">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>ไปตลาด</arg>
+</arguments>
+<msg timestamp="20161105 02:24:59.220" level="INFO">Current page contains text 'ไปตลาด'.</msg>
+<status status="PASS" endtime="20161105 02:24:59.221" starttime="20161105 02:24:59.196"></status>
+</kw>
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<doc>Verifies the current page does not contain `text`.</doc>
+<arguments>
+<arg>Buy Cola</arg>
+</arguments>
+<msg timestamp="20161105 02:24:59.261" level="INFO">Current page does not contain text 'Buy Cola'.</msg>
+<status status="PASS" endtime="20161105 02:24:59.261" starttime="20161105 02:24:59.221"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:59.261" starttime="20161105 02:24:59.195"></status>
+</kw>
+<kw name="ไม่พิมข้อความลงบน write a todo">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=topic_todo</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20161105 02:24:59.263" level="INFO">Typing text '' into text field 'id=topic_todo'</msg>
+<status status="PASS" endtime="20161105 02:24:59.294" starttime="20161105 02:24:59.262"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:59.295" starttime="20161105 02:24:59.262"></status>
+</kw>
+<kw name="ดูว่าไม่มีอะไรเกิดขึ้น">
+<kw name="Get Value" library="Selenium2Library">
+<doc>Returns the value attribute of element identified by `locator`.</doc>
+<arguments>
+<arg>id=a_todo_list_159</arg>
+</arguments>
+<assign>
+<var>${val}</var>
+</assign>
+<msg timestamp="20161105 02:24:59.324" level="INFO">${val} = Buy Cola</msg>
+<status status="PASS" endtime="20161105 02:24:59.324" starttime="20161105 02:24:59.296"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>'${val}'=='Buy Cola'</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:24:59.326" starttime="20161105 02:24:59.325"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:24:59.326" starttime="20161105 02:24:59.295"></status>
+</kw>
+<kw name="ปิดเว็บ">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161105 02:25:02.453" starttime="20161105 02:24:59.327"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:02.453" starttime="20161105 02:24:59.327"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:02.453" critical="yes" starttime="20161105 02:24:47.879"></status>
+</test>
+<status status="PASS" endtime="20161105 02:25:02.453" starttime="20161105 02:24:47.879"></status>
+</suite>
+<status status="PASS" endtime="20161105 02:25:02.453" starttime="20161105 02:24:47.879"></status>
+</suite>
+<suite source="D:\Testcase Sticky\07_Add_list" id="s1-s7" name="07 Add list">
+<suite source="D:\Testcase Sticky\07_Add_list\Add_list.robot" id="s1-s7-s1" name="Add list">
+<test id="s1-s7-s1-t1" name="Add list สำเร็จ">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20161105 02:25:02.453" level="INFO">Opening browser 'chrome' to base url 'https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/'</msg>
+<status status="PASS" endtime="20161105 02:25:10.381" starttime="20161105 02:25:02.453"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:10.381" starttime="20161105 02:25:02.453"></status>
+</kw>
+<kw name="กรอกUsername">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>guest</arg>
+</arguments>
+<msg timestamp="20161105 02:25:10.383" level="INFO">Typing text 'guest' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:25:10.472" starttime="20161105 02:25:10.382"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:10.473" starttime="20161105 02:25:10.382"></status>
+</kw>
+<kw name="กรอกPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20161105 02:25:10.474" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:25:10.554" starttime="20161105 02:25:10.474"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:10.554" starttime="20161105 02:25:10.473"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:25:10.556" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:25:10.639" starttime="20161105 02:25:10.555"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:10.640" starttime="20161105 02:25:10.555"></status>
+</kw>
+<kw name="รอแสดงผลว่าMy Lists">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>My Lists</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:25:11.808" starttime="20161105 02:25:10.641"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:11.809" starttime="20161105 02:25:10.640"></status>
+</kw>
+<kw name="พิมข้อความลงบน +Add list">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=add_list</arg>
+<arg>Trip</arg>
+</arguments>
+<msg timestamp="20161105 02:25:11.810" level="INFO">Typing text 'Trip' into text field 'id=add_list'</msg>
+<status status="PASS" endtime="20161105 02:25:11.894" starttime="20161105 02:25:11.810"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:11.895" starttime="20161105 02:25:11.809"></status>
+</kw>
+<kw name="กด Enter">
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>id=add_list</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:25:12.115" starttime="20161105 02:25:11.896"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:12.116" starttime="20161105 02:25:11.895"></status>
+</kw>
+<kw name="ตรวจสอบข้อความที่แสดงขึ้นมาว่าเป็น Trip">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Trip</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:25:12.368" starttime="20161105 02:25:12.117"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:12.368" starttime="20161105 02:25:12.116"></status>
+</kw>
+<kw name="ไม่พิมพ์อะไรบน +Add list">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=add_list</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20161105 02:25:12.369" level="INFO">Typing text '' into text field 'id=add_list'</msg>
+<status status="PASS" endtime="20161105 02:25:12.434" starttime="20161105 02:25:12.369"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:12.434" starttime="20161105 02:25:12.369"></status>
+</kw>
+<kw name="ตรวจสอบว่าไม่มี list ใหม่เกิดขึ้น">
+<kw name="Page Should Not Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is not found on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="list"]/li[11]/a</arg>
+</arguments>
+<msg timestamp="20161105 02:25:12.456" level="INFO">Current page does not contain element 'xpath=//*[@id="list"]/li[11]/a'.</msg>
+<status status="PASS" endtime="20161105 02:25:12.456" starttime="20161105 02:25:12.435"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:12.457" starttime="20161105 02:25:12.434"></status>
+</kw>
+<kw name="ปิดเว็บ">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161105 02:25:15.585" starttime="20161105 02:25:12.457"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:15.585" starttime="20161105 02:25:12.457"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:15.585" critical="yes" starttime="20161105 02:25:02.453"></status>
+</test>
+<status status="PASS" endtime="20161105 02:25:15.585" starttime="20161105 02:25:02.453"></status>
+</suite>
+<status status="PASS" endtime="20161105 02:25:15.585" starttime="20161105 02:25:02.453"></status>
+</suite>
+<suite source="D:\Testcase Sticky\08_Check_todo" id="s1-s8" name="08 Check todo">
+<suite source="D:\Testcase Sticky\08_Check_todo\Check_todo.robot" id="s1-s8-s1" name="Check todo">
+<test id="s1-s8-s1-t1" name="Check todo สำเร็จ">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20161105 02:25:15.585" level="INFO">Opening browser 'chrome' to base url 'https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/'</msg>
+<status status="PASS" endtime="20161105 02:25:32.668" starttime="20161105 02:25:15.585"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:32.669" starttime="20161105 02:25:15.585"></status>
+</kw>
+<kw name="กรอกUsername">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>guest</arg>
+</arguments>
+<msg timestamp="20161105 02:25:32.671" level="INFO">Typing text 'guest' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:25:32.758" starttime="20161105 02:25:32.670"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:32.759" starttime="20161105 02:25:32.669"></status>
+</kw>
+<kw name="กรอกPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20161105 02:25:32.760" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:25:32.840" starttime="20161105 02:25:32.760"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:32.841" starttime="20161105 02:25:32.759"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:25:32.842" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:25:32.926" starttime="20161105 02:25:32.842"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:32.927" starttime="20161105 02:25:32.841"></status>
+</kw>
+<kw name="รอแสดงผลว่าMy Lists">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>My Lists</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:25:34.233" starttime="20161105 02:25:32.928"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:34.234" starttime="20161105 02:25:32.927"></status>
+</kw>
+<kw name="ติ๊กช่องสี่เหลี่ยมหน้า Buy Cola ที่อยู่ในส่วนของ Undone">
+<kw name="Select Checkbox" library="Selenium2Library">
+<doc>Selects checkbox identified by `locator`.</doc>
+<arguments>
+<arg>id=a_todo_list_91</arg>
+</arguments>
+<msg timestamp="20161105 02:25:34.236" level="INFO">Selecting checkbox 'id=a_todo_list_91'.</msg>
+<status status="PASS" endtime="20161105 02:25:34.336" starttime="20161105 02:25:34.235"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:34.337" starttime="20161105 02:25:34.234"></status>
+</kw>
+<kw name="ตรวจสอบสี่เหลี่ยมหน้า Buy Cola ที่อยู่ในส่วนของ Completes">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=todo_91</arg>
+</arguments>
+<msg timestamp="20161105 02:25:34.355" level="INFO">Current page contains element 'id=todo_91'.</msg>
+<status status="PASS" endtime="20161105 02:25:34.356" starttime="20161105 02:25:34.338"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:34.357" starttime="20161105 02:25:34.337"></status>
+</kw>
+<kw name="ปิดเว็บ">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161105 02:25:38.281" starttime="20161105 02:25:34.358"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:38.281" starttime="20161105 02:25:34.357"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:38.281" critical="yes" starttime="20161105 02:25:15.585"></status>
+</test>
+<status status="PASS" endtime="20161105 02:25:38.281" starttime="20161105 02:25:15.585"></status>
+</suite>
+<status status="PASS" endtime="20161105 02:25:38.281" starttime="20161105 02:25:15.585"></status>
+</suite>
+<suite source="D:\Testcase Sticky\09_Unchecked_todo" id="s1-s9" name="09 Unchecked todo">
+<suite source="D:\Testcase Sticky\09_Unchecked_todo\Unchecked_todo.robot" id="s1-s9-s1" name="Unchecked todo">
+<test id="s1-s9-s1-t1" name="Unchecked todo สำเร็จ">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20161105 02:25:38.281" level="INFO">Opening browser 'chrome' to base url 'https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/'</msg>
+<status status="PASS" endtime="20161105 02:25:50.124" starttime="20161105 02:25:38.281"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:50.125" starttime="20161105 02:25:38.281"></status>
+</kw>
+<kw name="กรอกUsername">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>guest</arg>
+</arguments>
+<msg timestamp="20161105 02:25:50.127" level="INFO">Typing text 'guest' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:25:50.217" starttime="20161105 02:25:50.126"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:50.217" starttime="20161105 02:25:50.125"></status>
+</kw>
+<kw name="กรอกPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20161105 02:25:50.218" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:25:50.298" starttime="20161105 02:25:50.218"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:50.298" starttime="20161105 02:25:50.218"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:25:50.300" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:25:50.385" starttime="20161105 02:25:50.299"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:50.386" starttime="20161105 02:25:50.299"></status>
+</kw>
+<kw name="รอแสดงผลว่าMy Lists">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>My Lists</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:25:52.295" starttime="20161105 02:25:50.387"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:52.295" starttime="20161105 02:25:50.386"></status>
+</kw>
+<kw name="เอา Check ที่ช่องสี่เหลี่ยมหน้า Buy Cola ที่อยู่ในส่วนของ Completes ออก">
+<kw name="Unselect Checkbox" library="Selenium2Library">
+<doc>Removes selection of checkbox identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="todo_91"]/div/label/input</arg>
+</arguments>
+<msg timestamp="20161105 02:25:52.297" level="INFO">Unselecting checkbox '//*[@id="todo_91"]/div/label/input'.</msg>
+<status status="PASS" endtime="20161105 02:25:52.340" starttime="20161105 02:25:52.297"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:52.340" starttime="20161105 02:25:52.296"></status>
+</kw>
+<kw name="ตรวจสอบสี่เหลี่ยมหน้า Buy Cola ที่อยู่ในส่วนของ Undone">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="a_todo_list_91"]</arg>
+</arguments>
+<msg timestamp="20161105 02:25:52.356" level="INFO">Current page contains element 'xpath=//*[@id="a_todo_list_91"]'.</msg>
+<status status="PASS" endtime="20161105 02:25:52.356" starttime="20161105 02:25:52.341"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:52.356" starttime="20161105 02:25:52.340"></status>
+</kw>
+<kw name="ปิดเว็บ">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161105 02:25:55.444" starttime="20161105 02:25:52.356"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:55.444" starttime="20161105 02:25:52.356"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:25:55.444" critical="yes" starttime="20161105 02:25:38.281"></status>
+</test>
+<status status="PASS" endtime="20161105 02:25:55.444" starttime="20161105 02:25:38.281"></status>
+</suite>
+<status status="PASS" endtime="20161105 02:25:55.444" starttime="20161105 02:25:38.281"></status>
+</suite>
+<suite source="D:\Testcase Sticky\10_Delete_todo" id="s1-s10" name="10 Delete todo">
+<suite source="D:\Testcase Sticky\10_Delete_todo\Delete_todo.robot" id="s1-s10-s1" name="Delete todo">
+<test id="s1-s10-s1-t1" name="Delete todo สำเร็จ">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20161105 02:25:55.444" level="INFO">Opening browser 'chrome' to base url 'https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/'</msg>
+<status status="PASS" endtime="20161105 02:26:03.946" starttime="20161105 02:25:55.444"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:03.947" starttime="20161105 02:25:55.444"></status>
+</kw>
+<kw name="กรอกUsername">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>guest</arg>
+</arguments>
+<msg timestamp="20161105 02:26:03.950" level="INFO">Typing text 'guest' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:26:04.053" starttime="20161105 02:26:03.949"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:04.054" starttime="20161105 02:26:03.948"></status>
+</kw>
+<kw name="กรอกPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20161105 02:26:04.056" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:26:04.138" starttime="20161105 02:26:04.055"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:04.139" starttime="20161105 02:26:04.055"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:26:04.141" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:26:04.234" starttime="20161105 02:26:04.141"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:04.235" starttime="20161105 02:26:04.140"></status>
+</kw>
+<kw name="รอแสดงผลว่าMy Lists">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>My Lists</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:26:05.279" starttime="20161105 02:26:04.236"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:05.279" starttime="20161105 02:26:04.235"></status>
+</kw>
+<kw name="กดเครื่องหมาย กากบาก ในช่อง todo ชื่อ Buy Cola">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>id=a_todo_list_91</arg>
+</arguments>
+<msg timestamp="20161105 02:26:05.279" level="INFO">Simulating Mouse Over on element 'id=a_todo_list_91'</msg>
+<status status="PASS" endtime="20161105 02:26:05.326" starttime="20161105 02:26:05.279"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="del_91"]</arg>
+</arguments>
+<msg timestamp="20161105 02:26:05.327" level="INFO">Clicking element 'xpath=//*[@id="del_91"]'.</msg>
+<status status="PASS" endtime="20161105 02:26:05.393" starttime="20161105 02:26:05.327"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:05.394" starttime="20161105 02:26:05.279"></status>
+</kw>
+<kw name="ตรวจสอบ Todo ที่ลบไป">
+<kw name="Wait Until Element Is Not Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is not visible.</doc>
+<arguments>
+<arg>id=a_todo_list_91</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:26:05.620" starttime="20161105 02:26:05.395"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:05.620" starttime="20161105 02:26:05.394"></status>
+</kw>
+<kw name="ปิดเว็บ">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161105 02:26:08.745" starttime="20161105 02:26:05.620"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:08.745" starttime="20161105 02:26:05.620"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:08.745" critical="yes" starttime="20161105 02:25:55.444"></status>
+</test>
+<status status="PASS" endtime="20161105 02:26:08.745" starttime="20161105 02:25:55.444"></status>
+</suite>
+<status status="PASS" endtime="20161105 02:26:08.745" starttime="20161105 02:25:55.444"></status>
+</suite>
+<suite source="D:\Testcase Sticky\11_Delete_list" id="s1-s11" name="11 Delete list">
+<suite source="D:\Testcase Sticky\11_Delete_list\Delete_list.robot" id="s1-s11-s1" name="Delete list">
+<test id="s1-s11-s1-t1" name="Delete list สำเร็จ">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20161105 02:26:08.745" level="INFO">Opening browser 'chrome' to base url 'https://angsila.cs.buu.ac.th/~57160438/887371/Sticky/'</msg>
+<status status="PASS" endtime="20161105 02:26:19.608" starttime="20161105 02:26:08.745"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:19.609" starttime="20161105 02:26:08.745"></status>
+</kw>
+<kw name="กรอกUsername">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>guest</arg>
+</arguments>
+<msg timestamp="20161105 02:26:19.611" level="INFO">Typing text 'guest' into text field 'id=username'</msg>
+<status status="PASS" endtime="20161105 02:26:19.709" starttime="20161105 02:26:19.610"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:19.709" starttime="20161105 02:26:19.609"></status>
+</kw>
+<kw name="กรอกPassword">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20161105 02:26:19.711" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20161105 02:26:19.800" starttime="20161105 02:26:19.711"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:19.800" starttime="20161105 02:26:19.710"></status>
+</kw>
+<kw name="กดปุ่มSignIn">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=sign-in-btn</arg>
+</arguments>
+<msg timestamp="20161105 02:26:19.802" level="INFO">Clicking button 'id=sign-in-btn'.</msg>
+<status status="PASS" endtime="20161105 02:26:19.898" starttime="20161105 02:26:19.801"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:19.898" starttime="20161105 02:26:19.801"></status>
+</kw>
+<kw name="รอแสดงผลว่าMy Lists">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>My Lists</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:26:20.978" starttime="20161105 02:26:19.900"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:20.978" starttime="20161105 02:26:19.899"></status>
+</kw>
+<kw name="กดเครื่องหมาย กากบาก ในช่อง List ชื่อ Supermarket">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="list"]/li[3]/a</arg>
+</arguments>
+<msg timestamp="20161105 02:26:20.978" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="list"]/li[3]/a'</msg>
+<status status="PASS" endtime="20161105 02:26:21.028" starttime="20161105 02:26:20.978"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=del_list4</arg>
+</arguments>
+<msg timestamp="20161105 02:26:21.030" level="INFO">Clicking element 'id=del_list4'.</msg>
+<status status="PASS" endtime="20161105 02:26:21.097" starttime="20161105 02:26:21.029"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:21.098" starttime="20161105 02:26:20.978"></status>
+</kw>
+<kw name="ตรวจสอบ List ที่ลบไป">
+<kw name="Wait Until Page Does Not Contain Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` disappears from current page.</doc>
+<arguments>
+<arg>name=Supermarket</arg>
+</arguments>
+<status status="PASS" endtime="20161105 02:26:21.124" starttime="20161105 02:26:21.099"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:21.124" starttime="20161105 02:26:21.098"></status>
+</kw>
+<kw name="ปิดเว็บ">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161105 02:26:24.644" starttime="20161105 02:26:21.125"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:24.644" starttime="20161105 02:26:21.125"></status>
+</kw>
+<status status="PASS" endtime="20161105 02:26:24.644" critical="yes" starttime="20161105 02:26:08.745"></status>
+</test>
+<status status="PASS" endtime="20161105 02:26:24.644" starttime="20161105 02:26:08.745"></status>
+</suite>
+<status status="PASS" endtime="20161105 02:26:24.644" starttime="20161105 02:26:08.745"></status>
+</suite>
+<status status="PASS" endtime="20161105 02:26:24.644" starttime="20161105 02:23:34.227"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="24">Critical Tests</stat>
+<stat fail="0" pass="24">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Testcase Sticky" pass="24">Testcase Sticky</stat>
+<stat fail="0" id="s1-s1" name="01 Sign In" pass="7">Testcase Sticky.01 Sign In</stat>
+<stat fail="0" id="s1-s1-s1" name="Sign In" pass="7">Testcase Sticky.01 Sign In.Sign In</stat>
+<stat fail="0" id="s1-s2" name="02 Sign Up" pass="7">Testcase Sticky.02 Sign Up</stat>
+<stat fail="0" id="s1-s2-s1" name="Sign Up" pass="7">Testcase Sticky.02 Sign Up.Sign Up</stat>
+<stat fail="0" id="s1-s3" name="03 Sign out" pass="1">Testcase Sticky.03 Sign out</stat>
+<stat fail="0" id="s1-s3-s1" name="Sign out" pass="1">Testcase Sticky.03 Sign out.Sign out</stat>
+<stat fail="0" id="s1-s4" name="04 Write todo" pass="2">Testcase Sticky.04 Write todo</stat>
+<stat fail="0" id="s1-s4-s1" name="Write todo" pass="2">Testcase Sticky.04 Write todo.Write todo</stat>
+<stat fail="0" id="s1-s5" name="05 Edit todo" pass="1">Testcase Sticky.05 Edit todo</stat>
+<stat fail="0" id="s1-s5-s1" name="Edit todo" pass="1">Testcase Sticky.05 Edit todo.Edit todo</stat>
+<stat fail="0" id="s1-s6" name="06 Search todo" pass="1">Testcase Sticky.06 Search todo</stat>
+<stat fail="0" id="s1-s6-s1" name="Search todo" pass="1">Testcase Sticky.06 Search todo.Search todo</stat>
+<stat fail="0" id="s1-s7" name="07 Add list" pass="1">Testcase Sticky.07 Add list</stat>
+<stat fail="0" id="s1-s7-s1" name="Add list" pass="1">Testcase Sticky.07 Add list.Add list</stat>
+<stat fail="0" id="s1-s8" name="08 Check todo" pass="1">Testcase Sticky.08 Check todo</stat>
+<stat fail="0" id="s1-s8-s1" name="Check todo" pass="1">Testcase Sticky.08 Check todo.Check todo</stat>
+<stat fail="0" id="s1-s9" name="09 Unchecked todo" pass="1">Testcase Sticky.09 Unchecked todo</stat>
+<stat fail="0" id="s1-s9-s1" name="Unchecked todo" pass="1">Testcase Sticky.09 Unchecked todo.Unchecked todo</stat>
+<stat fail="0" id="s1-s10" name="10 Delete todo" pass="1">Testcase Sticky.10 Delete todo</stat>
+<stat fail="0" id="s1-s10-s1" name="Delete todo" pass="1">Testcase Sticky.10 Delete todo.Delete todo</stat>
+<stat fail="0" id="s1-s11" name="11 Delete list" pass="1">Testcase Sticky.11 Delete list</stat>
+<stat fail="0" id="s1-s11-s1" name="Delete list" pass="1">Testcase Sticky.11 Delete list.Delete list</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
